@@ -1,3 +1,4 @@
+
 function quantize(value, bitdepth = 8) {
   return Math.round(value * (Math.pow(2, bitdepth) - 1));
 }
@@ -24,6 +25,7 @@ function removeGamma(color) {
 function normalize(vec) {
   return math.divide(vec, math.norm(vec));
 }
+
 
 // TODO: colors might be OOG after projection. do anything?
 function project(colors_LMS) {
